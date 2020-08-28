@@ -24,8 +24,8 @@ class App extends Component {
     ]
     // const zeros = new Array(20).fill(0)
     // const cards = zeros.map((zero, index) => (<Card />))
-    let cards1 = icons.map((icon, index) => (<Card icon={ icon } id={ index } key={ index }/>))
-    let cards2 = icons.map((icon, index) => (<Card icon={ icon } id={ index } key={ index }/>))
+    let cards1 = icons.map((icon, index) => (<Card icon={ icon } key={Number(index)} index={ index } />))
+    let cards2 = icons.map((icon, index) => (<Card icon={ icon } key={Number(index)} index={ index } />))
     return (
       <>
         <h3>Welcome!!</h3>
